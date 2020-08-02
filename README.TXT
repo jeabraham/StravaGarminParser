@@ -9,3 +9,8 @@ Like:
 fitparse
 ogr
 osr
+
+
+python3 -m pip install --global-option=build_ext --global-option="-I/usr/include/gdal" GDAL==`gdal-config --version`
+python3 -m pip install ogr
+python3 -m pip install fitparse
