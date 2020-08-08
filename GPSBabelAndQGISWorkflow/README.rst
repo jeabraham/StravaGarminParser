@@ -16,7 +16,9 @@ Convert to GPX
 .fit files are ANT / GARMIN files showing your "moves", (exercises).  GPSBabel can process
 them
 
-	``for file in *.fit; do /Applications/GPSBabelFE.app/Contents/MacOS/gpsbabel -i garmin_fit -f $file -o gpx -F ../moves_gpx/$file.gpx; done``
+	```
+	for file in *.fit; do /Applications/GPSBabelFE.app/Contents/MacOS/gpsbabel -i garmin_fit -f $file -o gpx -F ../moves_gpx/$file.gpx; done
+	```
 
 Import them into QGIS
 ---------------------
@@ -41,7 +43,9 @@ The program make_qlr.py will apply the jinja2 template to a gpx file
 
 So, you can
 
-  `` for file in *.gpx; do python3 make_qlr.py $file; done ``
+  ```
+  for file in *.gpx; do python3 make_qlr.py $file; done
+  ```
 
 Project Setup
 =============
